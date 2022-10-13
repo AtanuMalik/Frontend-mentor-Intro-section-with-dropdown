@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Epilogue';
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #fafafa;
+}
+
+/*---------------------------- header ------------------------------*/
+
+header{
+    height: 6rem;
+    display: flex;
+    justify-content: space-between;
+}
+header .wrapper{
+    display: flex;
+}
+header .wrapper .logo{
+    display: flex;
+    align-items: center;
+    padding: 1rem 3rem;
+    width: 12rem;
+}   
+header .wrapper .logo a{
+    font-size: 2.2rem;
+    font-weight: 700;
+}
+
+header .wrapper .nav-items{
+    display: flex;
+    align-items: center;
+}
+
+header .wrapper .nav-items .nav-links{
+    padding: 0 1rem;
+    color: #696969;
+}
+
+header .wrapper .nav-items .nav-links:hover{
+    color: #000;
+    font-weight: 500;
+}
+
+header .login-section{
+    margin: 0 3rem;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+header .login-section button{
+    outline: none;
+    border: none;
+    background: none;
+    padding: 0.6rem 1rem;
+    font-size: 1rem;
+    color: #696969;
+    cursor: pointer;
+}
+header .login-section button:hover{
+    color: #000;
+    font-weight: 500;
+}
+header .login-section button:nth-child(2){
+    border: 2px solid #696969;
+    border-radius: 1rem;
+}
+header .login-section button:nth-child(2):hover{
+    color: #000;
+    border-color: #000;
+}
+/*---------------------- Header Ends here------------------------------*/
+
+/* container */
+
+.hero{
+    width: 100vw;
+    margin-top: 4rem;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    width: 90rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .text-area{
+    width: 40rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .text-area .title{
+    padding-top: 4rem;
+    height: 30rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container .text-area .title h1{
+    /* padding: 2rem 0; */
+    font-size: 6rem;
+}
+
+.container .text-area .title .small-text{
+    width: 32rem;
+}
+.container .text-area .title p{
+    font-size: 1.2rem;
+    color: #696969;
+}
+
+/* .container .text-area .btn{
+    
+} */
+.container .text-area .btn button{
+    width: 10rem;
+    padding: 1rem;
+    font-size: 1.2rem;
+    background-color: #000;
+    color: #fafafa;
+    border-radius: 1rem;
+}
+
+.container .text-area .brands{
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .image-area img{
+    width: 32rem;
+    height: 40rem;
+}
