@@ -2,73 +2,107 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Frontend Mentor | Intro section with dropdown navigation</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Mentor | Intro section with dropdown navigation</title>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-  <header>
-    <div class="wrapper">
-      <div class="logo">
-        <a href="index.html">Snap</a>
-      </div>
-      <div class="nav-items">
-        <a href="" class="nav-links">Features</a>
-        <a href="" class="nav-links">Company</a>
-        <a href="" class="nav-links">Careers</a>
-        <a href="" class="nav-links">About</a>
-      </div>
-    </div>
+    <header>
+        <div class="wrapper">
+            <div class="logo">
+                <a href="index.html">Snap</a>
+            </div>
+            <div class="nav-items">
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <button class="feature-btn">Feature</button>
+                        <img src="./images/icon-arrow-down.svg" alt="">
+                    </div>
 
-    <div class="login-section">
-      <button>Login</button>
-      <button>Register</button>
-    </div>
-
-  </header>
-  <div class="hero">
-    <div class="container">
-      <div class="text-area">
-        <div class="title">
-          <h1>Make remote work</h1>
-          
-          <div class="small-text">
-            <p>Get your team in sync, no matter your location. Streamline processes,
-              create team rituals, and watch productivity soar.
-            </p>
-          </div>
-
-          <div class="btn">
-            <button>Learn more</button>
-          </div>
+                    <div class="dropdown-content">
+                        <div class="item">
+                            <img src="./images/icon-todo.svg" alt="todo">
+                            <a href="#">Todo List</a>
+                        </div>
+                        <div class="item">
+                            <img src="./images/icon-calendar.svg" alt="todo">
+                            <a href="#">Calender</a>
+                        </div>
+                        <div class="item">
+                            <img src="./images/icon-reminders.svg" alt="todo">
+                            <a href="#">Reminders</a>
+                        </div>
+                        <div class="item">
+                            <img src="./images/icon-planning.svg" alt="todo">
+                            <a href="#">Planinng</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown">
+                    <div class="dropdown-btn">
+                        <button class="company-btn">Company</button>
+                        <img src="./images/icon-arrow-down.svg" alt="">
+                    </div>
+                    <div class="company-dropdown-content">
+                        <a href="#">History</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Blog</a>
+                    </div>
+                </div>
+                <a href="" class="nav-links">Careers</a>
+                <a href="" class="nav-links">About</a>
+            </div>
         </div>
 
-        
-        <div class="brands">
-          <div class="brand-items">
-            <img src="./images/client-databiz.svg" alt="">
-          </div>
-          <div class="brand-items">
-            <img src="./images/client-audiophile.svg" alt="">
-          </div>
-          <div class="brand-items">
-            <img src="./images/client-meet.svg" alt="">
-          </div>
-          <div class="brand-items">
-            <img src="./images/client-maker.svg" alt="">
-          </div>
+        <div class="login-section">
+            <button>Login</button>
+            <button>Register</button>
         </div>
-      </div>
+
+    </header>
+    <div class="hero">
+        <div class="container">
+            <div class="text-area">
+                <div class="title">
+                    <h1>Make remote work</h1>
+
+                    <div class="small-text">
+                        <p>Get your team in sync, no matter your location. Streamline processes,
+                            create team rituals, and watch productivity soar.
+                        </p>
+                    </div>
+
+                    <div class="btn">
+                        <button>Learn more</button>
+                    </div>
+                </div>
 
 
-      <div class="image-area">
-        <img src="./images/image-hero-desktop.png" alt="">
-      </div>
+                <div class="brands">
+                    <div class="brand-items">
+                        <img src="./images/client-databiz.svg" alt="">
+                    </div>
+                    <div class="brand-items">
+                        <img src="./images/client-audiophile.svg" alt="">
+                    </div>
+                    <div class="brand-items">
+                        <img src="./images/client-meet.svg" alt="">
+                    </div>
+                    <div class="brand-items">
+                        <img src="./images/client-maker.svg" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="image-area">
+                <img src="./images/image-hero-desktop.png" alt="">
+            </div>
+        </div>
     </div>
-  </div>
 
 </body>
 
