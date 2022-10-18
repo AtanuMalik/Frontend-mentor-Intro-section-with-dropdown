@@ -209,10 +209,12 @@ header .login-section button:nth-child(2):hover{
     background-color: #000;
     color: #fafafa;
     border-radius: 1rem;
+    cursor: pointer;
 }
 
 .container .text-area .brands{
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -222,3 +224,27 @@ header .login-section button:nth-child(2):hover{
 }
 
 /*---------------------- Making it Responsive using Media Queries------------------------------*/
+@media screen and (max-width: 1440px) {
+    .container{
+        width: 70rem;
+    }
+    .container .text-area{
+        width: 36rem;
+    }
+    .container .text-area .title h1{
+        font-size: 5.4rem;
+    }
+    .container .image-area img{
+        width: 24rem;
+        height: 32rem;
+    }
+    .container .text-area .btn button{
+        width: 8rem;
+        padding: 1rem;
+        font-size: 1rem;
+    }
+    .container .text-area .title{
+        padding-top: 2rem;
+        height: 26rem;
+    }
+}
