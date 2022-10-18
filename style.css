@@ -43,7 +43,7 @@ header .wrapper .nav-items{
 }
 
 header .wrapper .nav-items .nav-links{
-    padding: 0 1rem;
+    margin: 0 1rem;
     color: #696969;
 }
 
@@ -57,8 +57,11 @@ header .wrapper .nav-items .nav-links:hover{
 .features-dropdown{
     
 }
+.dropdown{
+    position: relative;
+}
 .dropdown-btn{
-    padding: 0 1rem;
+    margin: 0 1rem;
 }
 .feature-btn, .company-btn{
     outline: none;
@@ -76,10 +79,26 @@ header .wrapper .nav-items .nav-links:hover{
 .dropdown-content, .company-dropdown-content{
     display: none;
     position: absolute;
+    right: 0;
+    top: 1.5rem;
+    min-width: 10rem;
+    padding: .8rem 1rem;
+    border-radius: .4rem;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+.item{
+    padding: .4rem 0;
+}
+.item a{
+    padding: 0 .2rem;
+}
+.item img{
+    padding: 0 .2rem;
 
 }
-.company-dropdown-content{
 
+.company-dropdown-content{
     flex-direction: column;
     background-color: #fafafa;
     border: 1px solid #000;
@@ -88,7 +107,9 @@ header .wrapper .nav-items .nav-links:hover{
 .company-dropdown-content a{
     padding: .5rem;
 }
-
+.show {
+    display: block;
+}
 
 
 
