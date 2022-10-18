@@ -1,24 +1,21 @@
-const featureBtn = document.getElementById("feature-btn");
-const dropdown = document.querySelector(".dropdown-content");
+const dropdownButton = document.getElementById("feature-btn");
+const dropdownContent = document.getElementById("dropdown-content");
 
-featureBtn.onclick = dropdownToggle();
+const companyDropdownBtn = document.getElementById("company-feature-btn");
 
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-function dropdownToggle() {
-    dropdown.classList.toggle("show");
+dropdownButton.onclick = function showDropdown() {
+    document.getElementById("dropdown-content").classList.toggle("show");
 }
 
-// Close the dropdown if the user clicks outside of it
+companyDropdownBtn.onclick = () => {
+    document.getElementById("company-dropdown-content").classList.toggle("show");
+}
+
+
 window.onclick = function (event) {
-    if (!event.target.matches('featureBtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
+    if (!event.target.matches('.feature-btn')) {
+        document.getElementById('dropdown-content').classList.remove("show");
     }
+
 }
+
