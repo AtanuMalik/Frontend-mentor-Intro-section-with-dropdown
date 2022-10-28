@@ -11,11 +11,10 @@ companyDropdownBtn.onclick = () => {
     document.getElementById("company-dropdown-content").classList.toggle("show");
 }
 
+// window.onclick = function (event) {
+//     if (!event.target.matches('.feature-btn')) {
+//         document.getElementById('dropdown-content').classList.remove("show");
+//     }
+// }
 
-window.onclick = function (event) {
-    if (!event.target.matches('.feature-btn')) {
-        document.getElementById('dropdown-content').classList.remove("show");
-    }
-
-}
 
